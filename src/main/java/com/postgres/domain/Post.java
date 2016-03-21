@@ -29,6 +29,7 @@ public class Post {
     @Column(name="EXPIRY_DATE")
     LocalDateTime expiryDate;
 
+    @Column(name="MODIFIED_DATE")
     @Type(type = "org.jadira.usertype.dateandtime.threeten.PersistentZonedDateTime", parameters = { @Parameter(name = "databaseZone", value = "America/New_York"),
             @Parameter(name = "javaZone", value = "America/New_York")})
     ZonedDateTime modifiedDate;
